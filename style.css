@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h1{
+	margin-top: 70px;
+	font-size: 55px;
+	font-family: 'Montserrat', sans-serif;
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+#checkbox{
+	display: none;
+	position: absolute;
+}
+svg{
+	margin: 10px;
+	width: 37px;
+	height: 34px;
+}
+.label{
+	margin-top: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	background-color: #222;
+	height: 60px;
+	width: 110px;
+	border-radius: 50px;
+	cursor: pointer;
+}
+.ball{
+	position: absolute;
+	height: 55px;
+	width: 55px;
+	left: 3px;
+	border-radius: 50px;
+	background-color: white;
+	transition: 0.3s;
+}
+
+#checkbox:checked + .label .ball{
+	transform: translateX(46px);
+}
+
+body.dark{
+	background-color: black;
+}
+body.dark h1{
+	color: white;
+}
